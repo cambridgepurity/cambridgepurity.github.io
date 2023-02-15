@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SEP7E22D35"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-SEP7E22D35');
+    </script>
+
+    <title>University of Cambridge Purity Test</title>
+    <meta name="description" content="University of Cambridge Purity Test">
+    <meta name="theme-color" content="#08526e">
+    <link rel="icon" type="image/png"
+        href="logo.png" />
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<html>
+
+<!-- Adapted from https://github.com/kacp3rrr/rice-purity-demo -->
+
+<body>
+    <center><img src="logo.png"></center>
+    <h1>University of Cambridge Purity Test</h1>
+    <h2>Based on the <a href="http://ricepuritytest.com/" target="_blank">rice purity test</a>, but adapted for the advanced degeneracy seen only at the world-renowned University of Cambridge.</h2>
+    <h2>Much like the original, this test can serve as a means for "students to track the maturation of their experiences throughout college [sic]".</h2>
+    <h4>The college/course/gender boxes are optional - but I think we can all agree it would be neat to get some stats out of this.</h4>
+    <div id="hiding">
+    <br>
+    <div id="score"></div>
+    <br>
+    <div id="meaning"></div>
+    <br><br>
+    <div id="buttondiv">
+        <input class="button" id="refresh" type="submit" value="Clear Page" onClick="clearPage()">
+    </div>
+    </div>
+    <br>
+    <div id="list">
+        <ol>
+            <li> <input type="checkbox" id="1" name="1"> <label for="1">Got pooled</label>
+            <li> <input type="checkbox" id="2" name="2"> <label for="2">Was/is on an JCR/MCR committee</label>
+            <li> <input type="checkbox" id="3" name="3"> <label for="3">Was/is a rower</label>
+            <li> <input type="checkbox" id="4" name="4"> <label for="4">Was/is a choir kid</label>
+            <li> <input type="checkbox" id="5" name="5"> <label for="5">Was/is a theatre kid</label>
+            <li> <input type="checkbox" id="6" name="6"> <label for="6">Was/is a Union hack</label>
+            <li> <input type="checkbox" id="7" name="7"> <label for="7">Was/is part of a "zine" committee</label>
+            <li> <input type="checkbox" id="8" name="8"> <label for="8">Was/is part of CULC</label>
+            <li> <input type="checkbox" id="9" name="9"> <label for="9">Was/is part of CUCA</label>
+            <li> <input type="checkbox" id="10" name="10"> <label for="10">Was/is part of CULA</label>
+            <li> <input type="checkbox" id="11" name="11"> <label for="11">Was/is part of a country sports soc - polo, shooting, beagles</label>
+            <li> <input type="checkbox" id="12" name="12"> <label for="12">Was/is part of a drinking soc</label>
+            <li> <input type="checkbox" id="13" name="13"> <label for="13">Was/is part of the Pitt Club</label>
+            <li> <input type="checkbox" id="14" name="14"> <label for="14">Been on University Challenge</label>
+            <li> <input type="checkbox" id="15" name="15"> <label for="15">Submitted a camfess</label>
+            <li> <input type="checkbox" id="16" name="16"> <label for="16">Submitted a crushbridge</label>
+            <li> <input type="checkbox" id="17" name="17"> <label for="17">Submitted a kindbridge</label>
+            <li> <input type="checkbox" id="18" name="18"> <label for="18">Submitted a grudgebridge</label>
+            <li> <input type="checkbox" id="19" name="19"> <label for="19">Was/is an admin on an anonymous confessions page</label>
+            <li> <input type="checkbox" id="20" name="20"> <label for="20">Been portered</label>
+            <li> <input type="checkbox" id="21" name="21"> <label for="21">Been deaned</label>
+            <li> <input type="checkbox" id="22" name="22"> <label for="22">Been deaned more than once in a term</label>
+            <li> <input type="checkbox" id="23" name="23"> <label for="23">Stood outside during a fire alarm at another college</label>
+            <li> <input type="checkbox" id="24" name="24"> <label for="24">Walked on grass you're not meant to walk on</label>
+            <li> <input type="checkbox" id="25" name="25"> <label for="25">Snuck into Trinity</label>
+            <li> <input type="checkbox" id="26" name="26"> <label for="26">Snuck into a May Ball</label>
+            <li> <input type="checkbox" id="27" name="27"> <label for="27">Stolen formal tableware/cutlery with the college crest on it</label>
+            <li> <input type="checkbox" id="28" name="28"> <label for="28">Been in the Cam</label>
+            <li> <input type="checkbox" id="29" name="29"> <label for="29">Swallowed Cam water</label>
+            <li> <input type="checkbox" id="30" name="30"> <label for="30">Stolen alcohol from revs</label>
+            <li> <input type="checkbox" id="31" name="31"> <label for="31">Missed a supervision because of a hangover</label>
+            <li> <input type="checkbox" id="32" name="32"> <label for="32">Been to a Lucy rave</label>
+            <li> <input type="checkbox" id="33" name="33"> <label for="33">Been to a rave in the rage cage</label>
+            <li> <input type="checkbox" id="34" name="34"> <label for="34">Did coke on castle hill</label>
+            <li> <input type="checkbox" id="35" name="35"> <label for="35">Sharked/been sharked</label>
+            <li> <input type="checkbox" id="36" name="36"> <label for="36">Been to a Downing orgy</label>
+            <li> <input type="checkbox" id="37" name="37"> <label for="37">Talked about work during pillow talk</label>
+            <li> <input type="checkbox" id="38" name="38"> <label for="38">Been in a loving, monogomous, exclusive relationship&#9829;&#8482;</label>
+            <li> <input type="checkbox" id="39" name="39"> <label for="39">Committed staircase/flat-cest</label>
+            <li> <input type="checkbox" id="40" name="40"> <label for="40">Committed college-cest</label>
+            <li> <input type="checkbox" id="41" name="41"> <label for="41">Committed course-cest</label>
+            <li> <input type="checkbox" id="42" name="42"> <label for="42">Got with your college parent</label>
+            <li> <input type="checkbox" id="43" name="43"> <label for="43">Slept with your college parent</label>
+            <li> <input type="checkbox" id="44" name="44"> <label for="44">Got with your college spouse</label>
+            <li> <input type="checkbox" id="45" name="45"> <label for="45">Slept with your college spouse</label>
+            <li> <input type="checkbox" id="46" name="46"> <label for="46">Got with your college child</label>
+            <li> <input type="checkbox" id="47" name="47"> <label for="47">Slept with your college child</label>
+            <li> <input type="checkbox" id="48" name="48"> <label for="48">Fucked in black tie</label>
+            <li> <input type="checkbox" id="49" name="49"> <label for="49">Fucked in white tie</label>
+            <li> <input type="checkbox" id="50" name="50"> <label for="50">Fucked in a gown</label>
+            <li> <input type="checkbox" id="51" name="51"> <label for="51">Got with a supervisor/supervisee</label>
+            <li> <input type="checkbox" id="52" name="52"> <label for="52">Slept with a supevisor/supervisee</label>
+            <li> <input type="checkbox" id="53" name="53"> <label for="53">Got with YOUR supervisor/supervisee</label>
+            <li> <input type="checkbox" id="54" name="54"> <label for="54">Slept with YOUR supervisor/supervisee</label>
+            <li> <input type="checkbox" id="55" name="55"> <label for="55">Got with a college staff member (bedder, admin, gardener, porter, etc.)</label>
+            <li> <input type="checkbox" id="56" name="56"> <label for="56">Slept with a college staff member</label>
+            <li> <input type="checkbox" id="57" name="57"> <label for="57">Slept with a rower</label>
+            <li> <input type="checkbox" id="58" name="58"> <label for="58">Slept with a Union hack</label>
+            <li> <input type="checkbox" id="59" name="59"> <label for="59">Slept with someone high up in the Union committee</label>
+            <li> <input type="checkbox" id="60" name="60"> <label for="60">Slept with a CUCA member</label>
+            <li> <input type="checkbox" id="61" name="61"> <label for="61">Slept with a CULC member</label>
+            <li> <input type="checkbox" id="62" name="62"> <label for="62">Slept with a CULA member</label>
+            <li> <input type="checkbox" id="63" name="63"> <label for="63">Slept with someone from choir</label>
+            <li> <input type="checkbox" id="64" name="64"> <label for="64">Slept with someone from theatre (ADC kids rejoice)</label>
+            <li> <input type="checkbox" id="65" name="65"> <label for="65">Slept with someone on the Varsity Trip</label>
+            <li> <input type="checkbox" id="66" name="66"> <label for="66">Slept with your JCR/MCR president</label>
+            <li> <input type="checkbox" id="67" name="67"> <label for="67">Slept with anyone part of a country sports soc</label>
+            <li> <input type="checkbox" id="68" name="68"> <label for="68">Slept with someone on a "zine" committee</label>
+            <li> <input type="checkbox" id="69" name="69"> <label for="69">Slept with someone that was on University Challenge</label>
+            <li> <input type="checkbox" id="70" name="70"> <label for="70">Got with someone from Oxf*rd</label>
+            <li> <input type="checkbox" id="71" name="71"> <label for="71">Slept with someone from Oxf*rd (disgusting)</label>
+            <li> <input type="checkbox" id="72" name="72"> <label for="72">Got with someone from ARU</label>
+            <li> <input type="checkbox" id="73" name="73"> <label for="73">Slept with someone from ARU (arguably better than Oxf*rd)</label>
+            <li> <input type="checkbox" id="74" name="74"> <label for="74">Got with a townie</label>
+            <li> <input type="checkbox" id="75" name="75"> <label for="75">Slept with a townie</label>
+            <li> <input type="checkbox" id="76" name="76"> <label for="76">Slept with people doing 10+ different subjects</label>
+            <li> <input type="checkbox" id="77" name="77"> <label for="77">Slept with people from 10+ different colleges</label>
+            <li> <input type="checkbox" id="78" name="78"> <label for="78">Slept with people from all colleges (teddy bear challenge - completed it mate)</label>
+            <li> <input type="checkbox" id="79" name="79"> <label for="79">Had a fire alarm go off while having sex</label>
+            <li> <input type="checkbox" id="80" name="80"> <label for="80">Been walked-in on by a bedder</label>
+            <li> <input type="checkbox" id="81" name="81"> <label for="81">Got contraceptives from the porters lodge</label>
+            <li> <input type="checkbox" id="82" name="82"> <label for="82">Been with someone just for their college's formals/ball</label>
+            <li> <input type="checkbox" id="83" name="83"> <label for="83">Been railed/have railed someone right before a supervision</label>
+            <li> <input type="checkbox" id="84" name="84"> <label for="84">Fucked in your college library</label>
+            <li> <input type="checkbox" id="85" name="85"> <label for="85">Fucked in your college chapel</label>
+            <li> <input type="checkbox" id="86" name="86"> <label for="86">Fucked in a random (not yours or the other person's) college library</label>
+            <li> <input type="checkbox" id="87" name="87"> <label for="87">Fucked in a random college chapel</label>
+            <li> <input type="checkbox" id="88" name="88"> <label for="88">Fucked in a department</label>
+            <li> <input type="checkbox" id="89" name="89"> <label for="89">Fucked in a JCR or MCR (or SCR?!)</label>
+            <li> <input type="checkbox" id="90" name="90"> <label for="90">Had sex in the UL</label>
+            <li> <input type="checkbox" id="91" name="91"> <label for="91">Had sex during a May Ball</label>
+            <li> <input type="checkbox" id="92" name="92"> <label for="92">Fucked on Jesus Green</label>
+            <li> <input type="checkbox" id="93" name="93"> <label for="93">Fucked on Parker's Piece (how?)</label>
+            <li> <input type="checkbox" id="94" name="94"> <label for="94">Had sex during an online supervision</label>
+            <li> <input type="checkbox" id="95" name="95"> <label for="95">Had sex during an online exam</label>
+            <li> <input type="checkbox" id="96" name="96"> <label for="96">Had sex during an in-person supervision (bro)</label>
+            <li> <input type="checkbox" id="97" name="97"> <label for="97">Been part of a college STI outbreak</label>
+            <li> <input type="checkbox" id="98" name="98"> <label for="98">Masturbated in a library</label>
+            <li> <input type="checkbox" id="99" name="99"> <label for="99">Masturbated in a chapel</label>
+            <li> <input type="checkbox" id="100" name="100"> <label for="100">Touched (lmao) a trinmo</label>
+            <br><br>
+            <label for="college">College:</label> <select id="college" name="college">
+                <option value="anon">Anonymous</option>
+                <option value="christscollege">Christ's College</option>
+                <option value="churchillcollege">Churchill College</option>
+                <option value="clarecollege">Clare College</option>
+                <option value="clarehall">Clare Hall</option>
+                <option value="corpuschristicollege">Corpus Christi College</option>
+                <option value="darwincollege">Darwin College</option>
+                <option value="downingcollege">Downing College</option>
+                <option value="emmanuelcollege">Emmanuel College</option>
+                <option value="fitzwilliamcollege">Fitzwilliam College</option>
+                <option value="girtoncollege">Girton College</option>
+                <option value="gonvilleandcaiuscollege">Gonville and Caius College</option>
+                <option value="homertoncollege">Homerton College</option>
+                <option value="hugheshall">Hughes Hall</option>
+                <option value="jesuscollege">Jesus College</option>
+                <option value="kingscollege">King's College</option>
+                <option value="lucycavendishcollege">Lucy Cavendish College</option>
+                <option value="magdalenecollege">Magdalene College</option>
+                <option value="murrayedwardscollege">Murray Edwards College</option>
+                <option value="newnhamcollege">Newnham College</option>
+                <option value="pembrokecollege">Pembroke College</option>
+                <option value="peterhouse">Peterhouse</option>
+                <option value="queenscollege">Queens' College</option>
+                <option value="robinsoncollege">Robinson College</option>
+                <option value="selwyncollege">Selwyn College</option>
+                <option value="sidneysussexcollege">Sidney Sussex College</option>
+                <option value="stcatharinescollege">St Catharine's College</option>
+                <option value="stedmundscollege">St Edmund's College</option>
+                <option value="stjohnscollege">St John's College</option>
+                <option value="trinitycollege">Trinity College</option>
+                <option value="trinityhall">Trinity Hall</option>
+                <option value="wolfsoncollege">Wolfson College</option>
+              </select>
+              <br>
+              <label for="course">Course:</label> <select id="course" name="course">
+                <option value="anon">Anonymous</option>
+                <option value="anglosaxonnorseandceltic">Anglo-Saxon, Norse, and Celtic</option>
+                <option value="archaeology">Archaeology</option>
+                <option value="architecture">Architecture</option>
+                <option value="asianandmiddleeasternstudies">Asian and Middle Eastern Studies</option>
+                <option value="chemicalengineeringandbiotechnology">Chemical Engineering and Biotechnology</option>
+                <option value="classics">Classics</option>
+                <option value="computerscience">Computer Science</option>
+                <option value="economics">Economics</option>
+                <option value="education">Education</option>
+                <option value="engineering">Engineering</option>
+                <option value="english">English</option>
+                <option value="geography">Geography</option>
+                <option value="history">History</option>
+                <option value="historyandmodernlanguages">History and Modern Languages</option>
+                <option value="historyandpolitics">History and Politics</option>
+                <option value="historyofart">History of Art</option>
+                <option value="humansocialandpoliticalsciences">Human, Social, and Political Sciences</option>
+                <option value="landeconomy">Land Economy</option>
+                <option value="law">Law</option>
+                <option value="linguistics">Linguistics</option>
+                <option value="mathematics">Mathematics</option>
+                <option value="medicine">Medicine</option>
+                <option value="modernandmedievallanguages">Modern and Medieval Languages</option>
+                <option value="music">Music</option>
+                <option value="naturalsciences">Natural Sciences</option>
+                <option value="philosophy">Philosophy</option>
+                <option value="psychologicalandbehaviouralsciences">Psychological and Behavioural Sciences</option>
+                <option value="theologyreligionandphilosophyofreligion">Theology, Religion, and Philosophy of Religion</option>
+                <option value="veterinarymedicine">Veterinary Medicine</option>
+                <option value="other">Other (pick the closest one if possible)</option>
+              </select>
+              <br>
+              <label for="gender">Gender:</label> <select id="gender" name="gender">
+                <option value="anon">Anonymous</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+            </ol>
+
+        <input class="button" id="submit" type="submit" value="Calculate Score" onClick="calculateScore()">
+        <div>
+</body>
+
+</html>
