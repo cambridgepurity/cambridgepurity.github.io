@@ -20,6 +20,10 @@ function getCheckboxLabel(checkbox) {
     }
 }
 
+String.prototype.replaceAt = function(index, replacement) {
+    return this.substring(0, index) + replacement + this.substring(index + replacement.length);
+}
+
 //Calculates your score
 function calculateScore() {
     var totalChecked = document.querySelectorAll('input[type="checkbox"]:checked') //Gets all the boxes that were checked
@@ -32,10 +36,19 @@ function calculateScore() {
     var gender_e = document.getElementById("gender");
     var gender = gender_e.options[gender_e.selectedIndex].text;
 
-    var all_checked = Array.prototype.map.call(totalChecked, function(x) { return [x.name, getCheckboxLabel(x).textContent] });
+    var all_checked = "0".repeat(100);
+
+    totalChecked.forEach(function(x) {
+        var i = parseInt(x.name) - 1;
+        all_checked = all_checked.replaceAt(i, '1')
+    })
+
+    var all_checked_hex = parseInt(all_checked, 2).toString(16);
+
+    // var all_checked = Array.prototype.map.call(totalChecked, function(x) { return [x.name, getCheckboxLabel(x).textContent] });
 
     gtag('event', 'submit_results', {
-        'all_checked': all_checked,
+        'all_checked': all_checked_hex,
         'score': score,
         'college': college,
         'course': course,
