@@ -43,17 +43,21 @@ function calculateScore() {
         all_checked = all_checked.replaceAt(i, '1')
     })
 
-    var all_checked_hex = parseInt(all_checked, 2).toString(16);
+    let x = new BigNumber(all_checked, 2);
+    var all_checked_hex = x.toString(16);
 
     // var all_checked = Array.prototype.map.call(totalChecked, function(x) { return [x.name, getCheckboxLabel(x).textContent] });
 
-    gtag('event', 'submit_results', {
-        'all_checked': all_checked_hex,
+    var params = {
         'score': score,
         'college': college,
         'course': course,
-        'gender': gender
-      });
+        'gender': gender,
+        'all_checked': all_checked_hex
+      };
+
+    gtag('event', 'submit_results', params);
+    console.log(params);
 
     //Associates your score with what it says about you
     var meaning;
